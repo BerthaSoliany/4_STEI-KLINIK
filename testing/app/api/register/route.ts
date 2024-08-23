@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { addDataToSheet } from '../../actions/google-sheets.action'; 
+import { addDataToSheet } from '../../actions/google-sheets.action';
+ 
 export async function POST(request: Request) {
     try {
         const { firstName, lastName, email, password } = await request.json();
