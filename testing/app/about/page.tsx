@@ -31,7 +31,7 @@ export default function RegisterPage() {
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
                 <h1 className="text-center text-gray-800 text-3xl font-semibold mb-4">Welcome to STEI-Klinik</h1>
                 <p className="text-center text-gray-600 mb-8">
-                    Have an account? <a href="#" className="text-blue-600 font-medium">login</a>
+                    Have an account? <a href="/login" className="text-blue-600 font-medium">login</a>
                 </p>
 
                 <button className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
