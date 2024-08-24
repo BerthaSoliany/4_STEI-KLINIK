@@ -27,25 +27,25 @@ export default function RegisterPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex items-center justify-center bg-white">
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-                <h1 className="text-center text-gray-600 text-2xl font-semibold mb-6">Welcome to STEI-Klinik</h1>
-                <p className="text-center text-gray-500 mb-6">
-                    Have an account? <a href="#" className="text-blue-600">login</a>
+                <h1 className="text-center text-gray-800 text-3xl font-semibold mb-4">Welcome to STEI-Klinik</h1>
+                <p className="text-center text-gray-600 mb-8">
+                    Have an account? <a href="#" className="text-blue-600 font-medium">login</a>
                 </p>
-                
-                <button className="flex items-center justify-center w-full py-2 mb-4 border border-gray-300 rounded-lg text-gray-600">
+
+                <button className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
                     <img
-                        src="/google-logo.png" 
+                        src="/google-logo.png"
                         alt="Google Logo"
-                        className="w-6 h-auto mr-3"
+                        className="w-5 h-5 mr-3"
                     />
                     Continue with Google
                 </button>
 
                 <div className="flex items-center mb-4">
                     <div className="flex-grow h-px bg-gray-300"></div>
-                    <span className="text-gray-500 px-2">OR</span>
+                    <span className="text-gray-600 px-2 font-medium">or</span>
                     <div className="flex-grow h-px bg-gray-300"></div>
                 </div>
 
@@ -55,35 +55,25 @@ export default function RegisterPage() {
                             type="text"
                             placeholder="First Name"
                             value={firstName}
-                            onChange={(e) => {
-                                console.log('First Name:', e.target.value); 
-                                setFirstName(e.target.value);
-                            }}
-                            className="w-1/2 px-3 py-2 border border-gray-300 rounded-lg text-gray-600"
+                            onChange={(e) => setFirstName(e.target.value)}
+                            className="w-1/2 px-3 py-2 border border-gray-300 rounded-lg text-gray-800"
                         />
                         <input
                             type="text"
                             placeholder="Last Name"
                             value={lastName}
-                            onChange={(e) => {
-                                console.log('Last Name:', e.target.value); 
-                                setLastName(e.target.value);
-                            }}
-                            className="w-1/2 px-3 py-2 border border-gray-300 rounded-lg text-gray-600"
+                            onChange={(e) => setLastName(e.target.value)}
+                            className="w-1/2 px-3 py-2 border border-gray-300 rounded-lg text-gray-800"
                         />
                     </div>
-                    
+
                     <div className="mb-4">
-                        <label className="block text-gray-500 mb-1">Email</label>
                         <input
                             type="email"
                             placeholder="Enter Email"
                             value={email}
-                            onChange={(e) => {
-                                console.log('Email:', e.target.value); 
-                                setEmail(e.target.value);
-                            }}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-600"
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-800"
                         />
                     </div>
 
@@ -92,15 +82,12 @@ export default function RegisterPage() {
                             type="password"
                             placeholder="Enter Password"
                             value={password}
-                            onChange={(e) => {
-                                console.log('Password:', e.target.value); 
-                                setPassword(e.target.value);
-                            }}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-600"
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-800"
                         />
                     </div>
 
-                    <button className="w-full py-2 bg-gray-400 text-white rounded-lg">
+                    <button className="w-full py-3 bg-[#11726c] text-white font-medium rounded-lg">
                         Continue with email
                     </button>
                 </form>
