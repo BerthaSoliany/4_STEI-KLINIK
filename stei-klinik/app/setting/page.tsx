@@ -41,7 +41,7 @@ export default function Setting({ nama, nim }: props) {
                 </p>
               </div>
               <div className="flex flex-col space-y-3">
-                <Navbar gambar="/icon_chat lines_.png" judul="ChatDokter" href="/chatdokter" />
+                <Navbar gambar="/icon_chat lines_.png" judul="ChatDokter" href="/chat-dokter" />
                 <Navbar gambar="/date.png" judul="JanjiDokter" href="/janjidokter" />
                 <Navbar gambar="/icon_password_.png" judul="GantiPassword" href="/gantipassword" />
                 <Navbar gambar="/logout.png" judul="Keluar" href="/logout" />
