@@ -1,6 +1,9 @@
+import Navbar from "./navbar";
+
 export interface props {
   nama: string;
   nim: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function setting({nama, nim}: props) {
@@ -21,6 +24,12 @@ return <body>
                 <div className="h-[50px] w-[290px] bg-[#40A578] mx-8 mt-14">
                   <p className="font-bold text-base" style={{marginLeft:"120px"}}>{nama}nama</p>
                   <p className="text-xs" style={{marginLeft:"130px", marginTop:"4px"}}>{nim}NIM</p>
+                </div>
+                <div className="flex flex-col space-y-3">
+                  <Navbar gambar="/icon_chat lines_.png" judul="ChatDokter"/>
+                  <Navbar gambar="/date.png" judul="JanjiDokter"/>
+                  <Navbar gambar="/icon_password_.png" judul="GantiPassword"/>
+                  <Navbar gambar="/logout.png" judul="Keluar"/>
                 </div>
             </div>
           </div>
