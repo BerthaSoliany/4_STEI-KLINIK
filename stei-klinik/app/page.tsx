@@ -18,8 +18,9 @@ return <body>
         <div className="flex">
           <div className="h-[370px] w-[350px] bg-[#DAEED5] mt-14 mb-10 absolute right-0 mr-24">
             <div className="pt-2">
-                <div className="h-[54px] w-[290px] bg-[#40A578] mx-8 mt-14">
-                  ...
+                <div className="h-[50px] w-[290px] bg-[#40A578] mx-8 mt-14">
+                  <p className="font-bold text-base" style={{marginLeft:"120px"}}>{nama}nama</p>
+                  <p className="text-xs" style={{marginLeft:"130px", marginTop:"4px"}}>{nim}NIM</p>
                 </div>
             </div>
           </div>
