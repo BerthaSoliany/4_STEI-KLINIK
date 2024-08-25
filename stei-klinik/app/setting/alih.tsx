@@ -1,0 +1,50 @@
+"use client";
+
+import React, {useState} from 'react'
+
+export interface ChatlinkProps {
+    link: string
+}
+
+const chatpage = ({chatlink}: ChatlinkProps) => {
+    const [isOpen, setIsOpen] = useState(false)
+    return(
+        <>
+            <div>
+                <button onClick={() => setIsOpen(true)} className="text-black text-xs bg-[#E6ff94] rounded-[5px] py-1 px-2 drop-shadow-md">Chat</button>
+
+                <Chatmodal chatmodal={chatlink} open={isOpen} onClose={() => setIsOpen(false)}/>
+            </div>
+        </>
+    );
+};
+
+const pwpage = ({chatlink}: ChatlinkProps) => {
+    const [isOpen, setIsOpen] = useState(false)
+    return(
+        <>
+            <div>
+                <button onClick={() => setIsOpen(true)} className="text-black text-xs bg-[#E6ff94] rounded-[5px] py-1 px-2 drop-shadow-md">Chat</button>
+
+                <Chatmodal chatmodal={chatlink} open={isOpen} onClose={() => setIsOpen(false)}/>
+            </div>
+        </>
+    );
+};
+
+const logoutpage = ({chatlink}: ChatlinkProps) => {
+    const [isOpen, setIsOpen] = useState(false)
+    return(
+        <>
+            <div>
+                <button onClick={() => setIsOpen(true)} className="text-black text-xs bg-[#E6ff94] rounded-[5px] py-1 px-2 drop-shadow-md">Chat</button>
+
+                <Chatmodal chatmodal={chatlink} open={isOpen} onClose={() => setIsOpen(false)}/>
+            </div>
+        </>
+    );
+};
+
+export default chatpage;
+export default pwpage;
+export default logoutpage;
