@@ -13,18 +13,18 @@ export default function Home() {
             <div className="w-full flex flex-col">
             
             <div className="flex justify-between items-center bg-white p-4 shadow-md">
-                <div className="flex">
+                <div className="flex pl-10">
                 <Image 
                 src={Logo} 
                 alt="Logo" 
                 width={50} 
                 height={50} 
                 />
-                <h1 className="text-[#006769] text-5xl">STEI-Klinik</h1>
+                <h1 className="text-[#006769] text-3xl font-bold pt-2">STEI-Klinik</h1>
                 </div>
 
                 
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 pr-10">
                 <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
                     Login
                 </button>
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
         </div>
         <div className="p-0">
-            <div className="flex justify-center  w-full h-full bg-white pl-32 pr-32">
+            <div className="flex justify-center  w-full h-full bg-white pl-64 pr-64 pt-16">
             <div className="flex flex-col  w-full max-w bg-white p-8 rounded">
                 
                 
@@ -59,14 +59,16 @@ export default function Home() {
                 />
                 </div>
                 
+                <div>
+                <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3">Feature</h1>
                 <div className="flex flex-wrap">
-                    <Featlink featlink="/chat-dokter" featcolor="solid" featname="Pendaming Sebaya ITB"/>
-                    <Featlink featlink="/chat-dokter" featcolor="solid" featname="Integrasi Direktorat"/>
+                    <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendaming Sebaya ITB"/>
+                    <Featlink featlink="https://six.itb.ac.id/" featcolor="solid" featname="Integrasi Direktorat"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Info Kesehatan"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Chat Dengan Dokter"/>
-                    <Featlink featlink="/chat-dokter" featcolor="" featname="Buat Janji dengan Dokter"/>
                 </div>
-                
+                </div>
+
                 <div className="w-full bg-[#d8f691] p-4 rounded mt-8 text-center flex flex-col items-center">
                 <Image className="flex items-center"
                     src ={Spotlight}

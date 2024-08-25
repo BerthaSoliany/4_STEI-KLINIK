@@ -1,11 +1,32 @@
 import Boxdokter from "./boxdokter";
 import Boxminggu from "./boxminggu";
-
+import Logo from '@/public/Logo.png'
+import Image from "next/image";
 
 export default function Chatdokter() {
 return <body>
     <div className="overscroll-auto bg-[#ffffff] h-screen">
-        <div className="mb-[107px]"></div>
+        <div className="flex justify-between items-center bg-white p-4 shadow-md">
+                    <div className="flex pl-10">
+                    <Image 
+                    src={Logo} 
+                    alt="Logo" 
+                    width={50} 
+                    height={50} 
+                    />
+                    <h1 className="text-[#006769] text-3xl font-bold pt-2">STEI-Klinik</h1>
+                    </div>
+
+                    
+                    <div className="flex space-x-4 pr-10">
+                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Login
+                    </button>
+                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
+                        Sign Up
+                    </button>
+                    </div>
+                </div>
         <div className="flex-none w-screen h-[71px] bg-[#006769] m-0">
             <div className="pt-[21.5px] px-10">
                 <p className="text-[#FFFFFF] text-xl">Jadwal Chat Dokter</p>
