@@ -1,13 +1,13 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-
+import { useRouter } from 'next/navigation';
 
 export default function RegisterPage() {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const router = useRouter();
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -21,7 +21,7 @@ export default function RegisterPage() {
         });
 
         if (response.ok) {
-            alert('Login successful!');
+            router.push('/'); // Redirect to /home on successful login
         } else {
             alert('Failed to login.');
         }

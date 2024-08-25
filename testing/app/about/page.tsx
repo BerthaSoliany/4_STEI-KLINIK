@@ -21,6 +21,10 @@ export default function RegisterPage() {
 
         if (response.ok) {
             alert('Registration successful!');
+            setFirstName('');
+            setLastName('');
+            setEmail('');
+            setPassword('');
         } else {
             alert('Failed to register.');
         }
