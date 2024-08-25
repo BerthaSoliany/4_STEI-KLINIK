@@ -1,7 +1,3 @@
-import chatpage from "./alih";
-import pwpage from "./alih";
-import logoutpage from "./alih";
-
 export interface props {
     nama: string;
     nim: string;
@@ -10,7 +6,7 @@ export interface props {
     keluar: string
 }
 
-const boxDasar = ({nama, nim, chat, pw, keluar}: props) => {
+const box = ({nama, nim, chat, pw, keluar}: props) => {
     return (
         <>
             <div className="flex">
@@ -21,9 +17,9 @@ const boxDasar = ({nama, nim, chat, pw, keluar}: props) => {
                                 <p className="text-black text-base">{nama}</p>
                                 <p className="text-black text-xs">{nim}</p>
                             </div>
-                            <div className="h-[54px] w-[433px] mb-2"><chatpage alih={chat}/></div>
-                            <div className="h-[54px] w-[433px] mb-2"><pwpage alih={pw}/></div>
-                            <div className="h-[54px] w-[433px] mb-2"><logoutpage alih={keluar}/></div>
+                            <p className="text-black text-base">{chat}</p>
+                            <p className="text-black text-base">{pw}</p>
+                            <p className="text-black text-base">{keluar}</p>
                         </div>
                     </div>
                 </div> 
@@ -31,4 +27,4 @@ const boxDasar = ({nama, nim, chat, pw, keluar}: props) => {
     );
 };
 
-export default boxDasar;
+export default box;

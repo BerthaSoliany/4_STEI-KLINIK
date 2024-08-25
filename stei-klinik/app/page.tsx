@@ -1,4 +1,4 @@
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
+import box from "./box"
 
 export default function setting() {
 return <body>
@@ -12,6 +12,11 @@ return <body>
                 <p className="text-[#FFFFFF] text-xl">Setting</p>
             </div>
         </div>
+      {/* <div className="flex flex-col space-y-0">
+      </div> */}
+      {/* <div className="flex flex-col space-y-0">
+        <box chat="Chat Dokter"/>
+      </div> */}
     </div>
 </body>
 }
