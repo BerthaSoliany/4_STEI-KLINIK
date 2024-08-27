@@ -1,12 +1,10 @@
 import Navbar from "./navbar";
 
-export interface props {
-  nama: string;
-  nim: string;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+export interface setprops {
+  nama: string
 }
 
-export default function Setting({ nama, nim }: props) {
+export default function Setting ({nama} : setprops) {
   return (
     <body>
       <div className="overscroll-auto bg-[#ffffff] h-screen w-auto">
@@ -36,13 +34,9 @@ export default function Setting({ nama, nim }: props) {
                 <p className="font-bold text-base" style={{ marginLeft: "120px" }}>
                   {nama}
                 </p>
-                <p className="text-xs" style={{ marginLeft: "130px", marginTop: "4px" }}>
-                  {nim}
-                </p>
               </div>
               <div className="flex flex-col space-y-3">
                 <Navbar gambar="/icon_chat lines_.png" judul="ChatDokter" href="/chat-dokter" />
-                <Navbar gambar="/date.png" judul="JanjiDokter" href="/janjidokter" />
                 <Navbar gambar="/icon_password_.png" judul="GantiPassword" href="/gantipassword" />
                 <Navbar gambar="/logout.png" judul="Keluar" href="/logout" />
               </div>
