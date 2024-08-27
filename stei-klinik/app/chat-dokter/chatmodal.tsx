@@ -28,6 +28,13 @@ export default function Chatmodal({chatmodal, open, onClose} : ChatmodalProps) {
                     </button>
                 </div>
                 <div className='mt-12 ml-6 w-[650px] h-[250px] bg-[#f3faf3] border-[#40A578] border-[1px]'>
+                    <Image
+                        className='fixed m-5 ml-10'
+                        src="/whatsapp.png"
+                        width={207}
+                        height={207}
+                        alt="whatsapp logo"
+                    />
                     <pre className='flex text-2xl font-bold text-black justify-center pt-[100px]'>Chat akan dialihkan ke WhatsApp</pre>
                 </div>
                 <div className='fixed border-[#40A578] border-[1px] right-[26px] bottom-4 pt-1 pb-1 pl-8 pr-8'>
