@@ -66,22 +66,22 @@ return <body>
                         </div>
                     </div>
                     <div className="flex flex-col space-y-0">
-                        <Boxminggu minggu="Minggu ke - 1" />
+                        <Boxminggu minggu="Minggu ke - 1" aktif={false}/>
                         <Boxdokter nama="Dr. Riris" dokter="Dokter Umum" nomor="0812 1024 4392" chatlink='https://wa.me/6281210244392'/>
                         <Boxdokter nama="Drg. Wiwi" dokter="Dokter Gigi" nomor="0812 2009 0709" chatlink='https://wa.me/6281220090709'/>
                     </div>
                     <div className="flex flex-col space-y-0">
-                        <Boxminggu minggu="Minggu ke - 2" />
+                        <Boxminggu minggu="Minggu ke - 2" aktif={false}/>
                         <Boxdokter nama="Dr. Melly" dokter="Dokter Umum" nomor="0813 1010 6853" chatlink='https://wa.me/62081310106853'/>
                         <Boxdokter nama="Dr. Yunita" dokter="Dokter Umum" nomor="0813 997 6064" chatlink='https://wa.me/6208139976064'/>
                     </div>
                     <div className="flex flex-col space-y-0">
-                        <Boxminggu minggu="Minggu ke - 3" />
+                        <Boxminggu minggu="Minggu ke - 3" aktif={false}/>
                         <Boxdokter nama="Dr. Riris" dokter="Dokter Umum" nomor="0812 1024 4392" chatlink='https://wa.me/62081210244392'/>
                         <Boxdokter nama="Drg. Wiwi" dokter="Dokter Gigi" nomor="0812 2009 0709" chatlink='https://wa.me/62081220090709'/>
                     </div>
                     <div className="flex flex-col space-y-0">
-                        <Boxminggu minggu="Minggu ke - 4" />
+                        <Boxminggu minggu="Minggu ke - 4" aktif={true}/>
                         <Boxdokter nama="Dr. Mei Ria" dokter="Dokter Umum" nomor="0812 8559 9237" chatlink='https://wa.me/62081285599237'/>
                         <div className="text-sm font-bold text-[#006769] whitespace-pre-wrap w-[298px]">
                             <p>Note: Untuk Minggu ke-4 jam operasional dimulai pada pukul 08:00 - 21:00 setiap hari</p>
@@ -90,6 +90,7 @@ return <body>
                 </div>
                 <div className="text-sm font-bold text-[#006769] whitespace-pre-wrap w-[600px] p-4 pl-36">
                     <p>Note : Berikut adalah jadwal chat per minggu. Silakan chat sesuai jadwal yang telah ditentukan. Jika mengirim pesan di luar jadwal, maka pesan tidak akan dibalas oleh dokter.</p>
+                    <p className="pt-2">Note : Tanda hijau pada minggu ke-[] menunjukkan bahwa ini adalah minggu yang sedang berlangsung.</p>
                 </div>
             </div>
         </div>
