@@ -4,9 +4,14 @@ import Logo from '@/public/Logo.png'
 import Featlink from './featurebutton'
 import Spotlight from '@/public/Spotlight.png'
 import Artikel from '@/public/Artikel.png'
+import { getUserData } from "../actions/user.action";
 
 
-export default function Home() {
+export default async function Home() {
+    const data = await getUserData();
+    console.log(data);
+    // console.log("Hello");
+
   return (
     <div className="flex flex-col bg-white">
         <div className="z-10">

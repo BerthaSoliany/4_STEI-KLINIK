@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addDataToSheet } from '../../actions/google-sheets.action';
+import { addDataToSheet } from '../../actions/user.action';
  
 export async function POST(request: Request) {
     try {
