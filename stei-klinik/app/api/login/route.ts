@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getDataFromSheet } from '../../actions/google-sheets.action';
+import bcrypt from 'bcrypt';
 
 export async function POST(request: Request) {
     try {
@@ -21,7 +22,7 @@ export async function POST(request: Request) {
 
         const user = data.find((row: string[]) => {
             console.log('Checking row:', row);
-            return row[2].trim() === email.trim() && row[3].trim() === password.trim();
+            return row[2].trim() === email.trim() && bcrypt.compare(password.trim(), row[3].trim()) ;
         });
 
         console.log('User found:', user);
