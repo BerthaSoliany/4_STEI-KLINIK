@@ -90,20 +90,20 @@ export default function Home() {
                 <Link href="articles/sakit-tenggorokan">
                     <div className="bg-[#d8f691] p-4 rounded shadow">
                         <h3 className="text-black font-bold">Sakit Tenggorokan: Penyebab, Gejala, dan Pengobatan Efektif</h3>
-                        <p className="text-gray-600">20 Agustus 2024</p>
+                        <p className="text-gray-600">17 Agustus 2024</p>
                     </div>
                 </Link>
                 <Link href="articles/sakit-kepala">
                     <div className="bg-[#d8f691] p-4 rounded shadow">
                         <h3 className="text-black font-bold">Sakit Kepala: Jenis, Penyebab, dan Cara Mengobatinya
                         </h3>
-                        <p className="text-gray-600">21 Agustus 2024</p>
+                        <p className="text-gray-600">22 Agustus 2024</p>
                     </div>
                 </Link>
                 <Link href="articles/penyebab-nyeri">
                     <div className="bg-[#d8f691] p-4 rounded shadow">
                         <h3 className="text-black font-bold">Penyebab Umum Nyeri pada Tangan dan Cara Pencegahannya</h3>
-                        <p className="text-gray-600">22 Agustus 2024</p>
+                        <p className="text-gray-600">20 Agustus 2024</p>
                     </div>
                 </Link>
                 <Link href="articles/covid-19-masa-kini">
