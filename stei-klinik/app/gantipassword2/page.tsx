@@ -5,12 +5,29 @@ export default function gantipassword2() {
     return <body>
         <div className="overscroll-auto bg-[#F9F9F9] h-screen w-screen">
             <div className="w-[641px] h-[267px] rounded-[5px] bg-[#ffffff] absolute bottom-0" style={{marginLeft:"330px", marginBottom:"120px"}}>
-                <div className="w-[372px] h-[37px] rounded-[10px] border-[#B4B4B4] border-[1px]" style={{marginLeft:"130px", marginTop:"60px"}}>
-                    <p className="text-[#D9D9D9] text-[13px]" style={{marginTop:"9px", marginLeft:"13px"}}>Password lama</p>
+                
+                <div className=" flex items-center w-[372px]">
+                    <div className="w-full max-w-2x1">
+                    <input 
+                        type="text" 
+                        placeholder="Password Baru" 
+                        className="w-full p-2 border rounded-[10px] border-[#B4B4B4] text-black" 
+                        style={{marginLeft:"130px", marginTop:"60px"}}
+                    />
+                    </div>
                 </div>
-                <div className="w-[372px] h-[37px] rounded-[10px] border-[#B4B4B4] border-[1px]" style={{marginLeft:"130px", marginTop:"20px"}}>
-                    <p className="text-[#D9D9D9] text-[13px]" style={{marginTop:"9px", marginLeft:"13px"}}>Password lama</p>
+                
+                <div className=" flex items-center w-[372px]">
+                    <div className="w-full max-w-2x1">
+                    <input 
+                        type="text" 
+                        placeholder="Konfirmasi Password" 
+                        className="w-full p-2 border rounded-[10px] border-[#B4B4B4] text-black" 
+                        style={{marginLeft:"130px", marginTop:"15px"}}
+                    />
+                    </div>
                 </div>
+
                 <Link href="/home">
                     <p className="text-black underline text-[14px]" style={{marginLeft:"130px", marginTop:"25px"}}>Cancel & Go Back</p>
                 </Link>
