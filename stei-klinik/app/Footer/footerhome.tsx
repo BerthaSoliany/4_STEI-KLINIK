@@ -12,7 +12,7 @@ const Footerhome = () => {
             </Link>
             <div className="flex">
                 <p className="text-black text-[16px] font-bold" style={{marginTop:"3px"}}>STEI-KLINIK</p>
-                <Link href="/">
+                <Link href="https://web.facebook.com/profile.php?id=6156494499538">
                     <img
                         src="/facebook.png"
                         alt="fb"
@@ -20,7 +20,7 @@ const Footerhome = () => {
                         style={{width:"auto", height:"auto", marginLeft:"10px"}}
                     />
                 </Link>
-                <Link href="/">
+                <Link href="https://www.instagram.com/stei.klinik_/">
                     <img
                         src="/instagram.png"
                         alt="ig"
@@ -28,7 +28,7 @@ const Footerhome = () => {
                         style={{width:"auto", height:"auto", marginLeft:"5px", marginTop:"1px"}}
                     />
                 </Link>
-                <Link href="/">
+                <Link href="https://x.com/steiklinik">
                     <img
                         src="/twitter.png"
                         alt="twt"
