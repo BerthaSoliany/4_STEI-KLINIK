@@ -22,7 +22,8 @@ export async function POST(request: Request) {
 
         const user = data.find((row: string[]) => {
             console.log('Checking row:', row);
-            return row[2].trim() === email.trim() && bcrypt.compare(password.trim(), row[3].trim()) ;
+            const passwordMatch = bcrypt.compare(password.trim(), row[3].trim());
+            return row[2].trim() === email.trim() && passwordMatch;
         });
 
         console.log('User found:', user);
