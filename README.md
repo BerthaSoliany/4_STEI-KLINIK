@@ -12,15 +12,8 @@ Read Me of "Website STEI-Kinik"
     - Struktur Utama :
         1. stei-klinik
         2. home
-        3. articles
     - Struktur home :
         1. pages
-    - Struktur articles :
-        1. covid-19-masa-kini
-        2. flu-dan-demam
-        3. penyebab-nyeri
-        4. sakit-kepala
-        5. sakit-tenggorokan
     - Struktur stei-klinik :
         1. app
         2. public
@@ -40,6 +33,7 @@ Read Me of "Website STEI-Kinik"
         13. pilih-artikel
         14. register
         15. setting
+        16. articles
     - Strutur public :
         1. Angry.png
         2. Artikel.png
