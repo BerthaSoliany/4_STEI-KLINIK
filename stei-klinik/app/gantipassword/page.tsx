@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Header from "../Header/logo";
 
-
-// buat header yg logo
 // buat header yg pita ijo
 
 export default function gantipassword() {
     return <body>
         <div className="overscroll-auto bg-[#F9F9F9] h-screen w-screen">
+            <Header/>
             <div className="w-[641px] h-[267px] rounded-[5px] bg-[#ffffff] absolute bottom-0" style={{marginLeft:"330px", marginBottom:"120px"}}>
                 <p className="text-black text-[14px]" style={{marginLeft:"80px", marginTop:"70px"}}>Silakan masukkan password kamu saat ini untuk menjaga keamanan akun</p>
 

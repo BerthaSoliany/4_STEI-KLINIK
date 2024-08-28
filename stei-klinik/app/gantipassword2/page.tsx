@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Header from "../Header/logo";
 
 
 export default function gantipassword2() {
     return <body>
         <div className="overscroll-auto bg-[#F9F9F9] h-screen w-screen">
+            <Header/>
             <div className="w-[641px] h-[267px] rounded-[5px] bg-[#ffffff] absolute bottom-0" style={{marginLeft:"330px", marginBottom:"120px"}}>
                 
                 <div className=" flex items-center w-[372px]">
