@@ -7,6 +7,7 @@ import Artikel from '@/public/Artikel.png'
 import Header from '@/app/Header/logo'
 import Link from "next/link"
 import Footer from '@/app/Footer/footerhome'
+import Profile from "../Header/profile"
 
 export default function Home() {
   return (
@@ -19,18 +20,7 @@ export default function Home() {
                     <Header />
                 </div>
 
-                <div className="flex space-x-4 pr-2">
-                    <Link href="/login">
-                        <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
-                            Login
-                        </button>
-                    </Link>
-                    <Link href="/register">
-                        <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
-                            Sign Up
-                        </button>
-                    </Link>
-                </div>
+              <Profile nama="Guest"/>
             </div>
         
             

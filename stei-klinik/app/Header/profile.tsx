@@ -14,7 +14,7 @@ const Profile = ({nama}: userprops) => {
                     className="absolute top-0"
                     style={{ width: "auto", height: "auto", marginLeft:"890px", marginTop:"13px" }}
                 />
-                <p className="text-[#B4B4B4] font-bold text-[20px]" style={{marginLeft:"950px", marginTop:"23px"}}>{nama}Guest</p>
+                <p className="text-[#B4B4B4] font-bold text-[20px]" style={{marginLeft:"950px", marginTop:"23px"}}>{nama}</p>
             </div>
             <Link href="/setting">
                 <div>
