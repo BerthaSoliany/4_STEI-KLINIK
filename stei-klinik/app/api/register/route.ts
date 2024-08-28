@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { addDataToSheet } from '../../actions/google-sheets.action';
- 
+import { v4 as uuidv4 } from 'uuid';
+import bcrypt from 'bcrypt';
+
 export async function POST(request: Request) {
     try {
         const { firstName, lastName, email, password } = await request.json();
@@ -9,8 +11,14 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
         }
 
+        const new_id = uuidv4();
+
+        const name = firstName.trim() + " " + lastName.trim();
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+
         const newData = [
-            [firstName, lastName, email, password],
+            [new_id, name, email, hashedPassword],
         ];
 
         await addDataToSheet(newData);
