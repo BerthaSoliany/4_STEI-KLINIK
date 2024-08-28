@@ -20,12 +20,16 @@ export default function Home() {
                 </div>
 
                 <div className="flex space-x-4 pr-2">
-                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
-                        Login
-                    </button>
-                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
-                        Sign Up
-                    </button>
+                    <Link href="/login">
+                        <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
+                            Login
+                        </button>
+                    </Link>
+                    <Link href="/register">
+                        <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
+                            Sign Up
+                        </button>
+                    </Link>
                 </div>
             </div>
         
