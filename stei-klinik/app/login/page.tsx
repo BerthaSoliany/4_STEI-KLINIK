@@ -21,7 +21,7 @@ export default function RegisterPage() {
         });
 
         if (response.ok) {
-            router.push('/'); // Redirect to /home on successful login
+            router.push('/home'); // Redirect to /home on successful login
         } else {
             alert('Failed to login.');
         }
