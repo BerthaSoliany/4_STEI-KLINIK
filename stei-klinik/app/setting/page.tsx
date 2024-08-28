@@ -34,10 +34,10 @@ export default function Setting({ nama, nim }: props) {
             <div className="pt-2">
               <div className="h-[50px] w-[290px] bg-[#40A578] mx-8 mt-14">
                 <p className="font-bold text-base" style={{ marginLeft: "120px" }}>
-                  {nama}
+                  {nama} nama
                 </p>
                 <p className="text-xs" style={{ marginLeft: "130px", marginTop: "4px" }}>
-                  {nim}
+                  {nim} NIM
                 </p>
               </div>
               <div className="flex flex-col space-y-3">
