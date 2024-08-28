@@ -15,17 +15,17 @@ export default function Home() {
             <div className="w-full flex flex-col">
             
             <div className="flex justify-between items-center bg-white p-4 shadow-md">
-                <div className="flex pl-10">
-                <Header />
+                <div className="flex w-40">
+                    <Header />
                 </div>
 
-                <div className="flex space-x-4 pr-10">
-                <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
-                    Login
-                </button>
-                <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
-                    Sign Up
-                </button>
+                <div className="flex space-x-4 pr-2">
+                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Login
+                    </button>
+                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
+                        Sign Up
+                    </button>
                 </div>
             </div>
         
@@ -43,12 +43,12 @@ export default function Home() {
             </div>
         </div>
         <div className="p-0">
-            <div className="flex justify-center  w-full h-full bg-white pl-64 pr-64 pt-16">
-            <div className="flex flex-col  w-full max-w bg-white p-8 rounded">
+            <div className="flex justify-center  w-full h-full bg-white pl-16 pr-16 pt-16">
+            <div className="flex flex-col  w-screen min-w-96 bg-white rounded">
                 
                 
                 <div>
-                <Image className="w-full  py-4 rounded"
+                <Image className="w-screen py-4 rounded"
                     src={Banner}
                     alt="Banner"
                 />
@@ -57,9 +57,9 @@ export default function Home() {
              
 
                 <div>
-                <div className="flex items-center space-x-4">
-                <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3 leading-tight">Feature</h1>
-                <hr className="w-80 h-1 bg-[#006769] border-0 rounded mt-8" />
+                    <div className="flex items-center space-x-4">
+                    <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3 leading-tight">Feature</h1>
+                    <hr className="flex-1 h-1 bg-[#006769] border-0 rounded mt-8" />
                 </div>
                 <div className="flex flex-wrap justify items-center">
                     <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendaming Sebaya ITB"/>
@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center space-x-4">
                 <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3">Artikel</h1>
-                <hr className="w-80 h-1 bg-[#006769] border-0 rounded mt-8" />
+                <hr className="flex-1 h-1 bg-[#006769] border-0 rounded mt-8" />
                 </div>
                 <div className="w-full bg-[#F4FFE7] p-4 rounded mt-8 text-center flex flex-col items-center">
                 <Image className="flex items-center"
@@ -85,7 +85,7 @@ export default function Home() {
                 </div>
                 
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                <div className="bg-[#F4FFE7] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow items-center flex flex-col">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -93,16 +93,16 @@ export default function Home() {
                     <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-tenggorokan">Sakit Tenggorokan: Penyebab, Gejala, dan Pengobatan Efektif</Link></h3>
                     <p className="text-gray-600">20 Agustus 2024</p>
                 </div>
-                <div className="bg-[#F4FFE7] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow items-center flex flex-col">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
                     />
-                    <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-kelapa">Sakit Kepala: Jenis, Penyebab, dan Cara Mengobatinya</Link>
+                    <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-kepala ">Sakit Kepala: Jenis, Penyebab, dan Cara Mengobatinya</Link>
                     </h3>
                     <p className="text-gray-600">21 Agustus 2024</p>
                 </div>
-                <div className="bg-[#F4FFE7] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow items-center flex flex-col">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -110,7 +110,7 @@ export default function Home() {
                     <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/penyebab-nyeri">Penyebab Umum Nyeri pada Tangan dan Cara Pencegahannya</Link></h3>
                     <p className="text-gray-600">22 Agustus 2024</p>
                 </div>
-                <div className="bg-[#F4FFE7] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow items-center flex flex-col">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -120,7 +120,7 @@ export default function Home() {
                 </div>
                 </div>
                 <br/>
-                <button className=" rounded-full border-2 border-[#006769] px-4 py-2 text-[#006769] font-bold hover:border-blue-400 hover:text-blue-400">
+                <button className=" rounded-full border-2 border-[#006769] px-4 py-2 text-[#006769] font-bold hover:border-blue-400 hover:text-blue-400 m-4">
                 <Link href = "/pilih-artikel">Lihat Berita Lainnya</Link>
                 </button>   
                 

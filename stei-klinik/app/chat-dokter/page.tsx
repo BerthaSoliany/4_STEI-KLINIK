@@ -2,21 +2,13 @@ import Boxdokter from "./boxdokter";
 import Boxminggu from "./boxminggu";
 import Logo from '@/public/Logo.png'
 import Image from "next/image";
+import Header from "../Header/logo";
 
 export default function Chatdokter() {
 return <body>
     <div className="overscroll-auto bg-[#ffffff] h-screen">
         <div className="flex justify-between items-center bg-white p-4 shadow-md">
-                    <div className="flex pl-10">
-                    <Image 
-                    src={Logo} 
-                    alt="Logo" 
-                    width={50} 
-                    height={50} 
-                    />
-                    <h1 className="text-[#006769] text-3xl font-bold pt-2">STEI-Klinik</h1>
-                    </div>
-
+                <Header/>
                     
                     <div className="flex space-x-4 pr-10">
                     <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
@@ -27,7 +19,7 @@ return <body>
                     </button>
                     </div>
                 </div>
-        <div className="flex-none w-screen h-[71px] bg-[#006769] m-0">
+        <div className="flex-none h-[71px] bg-[#006769] m-0">
             <div className="pt-[21.5px] px-10">
                 <p className="text-[#FFFFFF] text-xl">Jadwal Chat Dokter</p>
             </div>
@@ -51,7 +43,7 @@ return <body>
                                 <li>Minggu : 08:00 - 14:00</li>
                             </ul>
                         </div>
-                        <div className="text-xs font-bold text-[#006769] whitespace-pre-wrap">
+                        <div className="text-xs font-bold text-[#006769] whitespace-pre-wrap ">
                             <ul className="list-none">
                                 <li>Shift 2</li>
                                 <li>    </li>
@@ -65,7 +57,7 @@ return <body>
                             </ul>
                         </div>
                     </div>
-                    <div className="flex flex-col space-y-0">
+                    <div className="flex flex-col space-y-0 m-2">
                         <Boxminggu minggu="Minggu ke - 1" aktif={false}/>
                         <Boxdokter nama="Dr. Riris" dokter="Dokter Umum" nomor="0812 1024 4392" chatlink='https://wa.me/6281210244392'/>
                         <Boxdokter nama="Drg. Wiwi" dokter="Dokter Gigi" nomor="0812 2009 0709" chatlink='https://wa.me/6281220090709'/>
@@ -84,13 +76,14 @@ return <body>
                         <Boxminggu minggu="Minggu ke - 4" aktif={true}/>
                         <Boxdokter nama="Dr. Mei Ria" dokter="Dokter Umum" nomor="0812 8559 9237" chatlink='https://wa.me/62081285599237'/>
                         <div className="text-sm font-bold text-[#006769] whitespace-pre-wrap w-[298px]">
-                            <p>Note: Untuk Minggu ke-4 jam operasional dimulai pada pukul 08:00 - 21:00 setiap hari</p>
+                            <p>Note: Untuk Minggu ke-4 jam operasional dimulai pada pukul 08:00 - 21:00 setiap hari
+                                <br /><br />
+                                Note : Berikut adalah jadwal chat per minggu. Silakan chat sesuai jadwal yang telah ditentukan. Jika mengirim pesan di luar jadwal, maka pesan tidak akan dibalas oleh dokter.
+                                <br /><br />
+                                Note : Tanda hijau pada minggu ke-[] menunjukkan bahwa ini adalah minggu yang sedang berlangsung.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div className="text-sm font-bold text-[#006769] whitespace-pre-wrap w-[600px] p-4 pl-36">
-                    <p>Note : Berikut adalah jadwal chat per minggu. Silakan chat sesuai jadwal yang telah ditentukan. Jika mengirim pesan di luar jadwal, maka pesan tidak akan dibalas oleh dokter.</p>
-                    <p className="pt-2">Note : Tanda hijau pada minggu ke-[] menunjukkan bahwa ini adalah minggu yang sedang berlangsung.</p>
                 </div>
             </div>
         </div>
