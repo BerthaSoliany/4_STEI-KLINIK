@@ -1,13 +1,16 @@
+'use client';
+
 import Image from "next/image";
 import Banner from '@/public/Banner.png'
 import Logo from '@/public/Logo.png'
 import Featlink from './featurebutton'
 import Spotlight from '@/public/Spotlight.png'
 import Artikel from '@/public/Artikel.png'
-import { useRouter } from 'next/navigation';
+import { signOut, useSession } from "next-auth/react";
 
 
-export default function Home() {
+export default function HomeSession() {
+    const session = useSession();
   return (
     <div className="flex flex-col bg-white">
         <div className="z-10">
@@ -26,13 +29,8 @@ export default function Home() {
 
                 
                 <div className="flex space-x-4 pr-10">
-                <button 
-                // onClick={() => useRouter().push('/login')} 
-                className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
-                    Login
-                </button>
-                <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
-                    Sign Up
+                <button onClick={() => signOut()} className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Log out
                 </button>
                 </div>
             </div>

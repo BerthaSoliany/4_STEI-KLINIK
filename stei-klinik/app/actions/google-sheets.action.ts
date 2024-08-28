@@ -4,7 +4,7 @@ import { google } from "googleapis";
 // Function to get data from the sheet
 export async function getSheetData() { 
   const glAuth = await google.auth.getClient({
-    projectId: "coba-milestone",
+    projectId: "stei-klinik",
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL!,
       private_key: process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, "\n")
@@ -30,7 +30,7 @@ export async function getSheetData() {
 // Define and export addDataToSheet function
 export async function addDataToSheet(newData: any[]) {
   const glAuth = await google.auth.getClient({
-    projectId: "coba-milestone",
+    projectId: "stei-klinik",
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL!,
       private_key: process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, "\n")
@@ -52,7 +52,7 @@ export async function addDataToSheet(newData: any[]) {
 
 export async function getDataFromSheet() {
   const glAuth = await google.auth.getClient({
-    projectId: "coba-milestone",
+    projectId: "stei-klinik",
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL!,
       private_key: process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, "\n")

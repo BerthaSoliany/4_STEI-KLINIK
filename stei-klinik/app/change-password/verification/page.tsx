@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Header from "../Header/logo";
-import Pita from "../Header/pita";
+import Header from "../../Header/logo";
+import Pita from "../../Header/pita";
 
 
-export default function gantipassword() {
+export default function ChangePasswordVerification() {
     return <body>
         <div className="overscroll-auto bg-[#F9F9F9] h-screen w-screen">
             <Header/>

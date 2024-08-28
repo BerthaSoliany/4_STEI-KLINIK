@@ -2,12 +2,15 @@
 
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import { signIn } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
 
-export default function RegisterPage() {
+export default function LoginPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const router = useRouter();
+    const session = useSession();
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -20,8 +23,8 @@ export default function RegisterPage() {
             body: JSON.stringify({ email, password }),
         });
 
-        if (response.ok) {
-            router.push('/'); // Redirect to /home on successful login
+        if (response.ok || session) {
+            router.push('/home'); // Redirect to /home on successful login
         } else {
             alert('Failed to login.');
         }
@@ -35,7 +38,7 @@ export default function RegisterPage() {
                     Do not have an account? <a href="/register" className="text-blue-600 font-medium">register</a>
                 </p>
 
-                <button className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
+                <button onClick={() => signIn('google')} className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
                     <img
                         src="/google-logo.png"
                         alt="Google Logo"
