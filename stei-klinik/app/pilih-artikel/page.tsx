@@ -27,16 +27,16 @@ export default function Home() {
                 alt = "Artikel"
                 />
                 <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-tenggorokan">Sakit Tenggorokan: Penyebab, Gejala, dan Pengobatan Efektif</Link></h3>
-                <p className="text-gray-600">20 Agustus 2024</p>
+                <p className="text-gray-600">17 Agustus 2024</p>
             </div>
             <div className="bg-[#F4FFE7] text-black flex flex-col items-center rounded shadow p-4">
                 <Image
                 src ={Artikel}
                 alt = "Artikel"
                 />
-                <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-kelapa">Sakit Kepala: Jenis, Penyebab, dan Cara Mengobatinya</Link>
+                <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-kepala">Sakit Kepala: Jenis, Penyebab, dan Cara Mengobatinya</Link>
                 </h3>
-                <p className="text-gray-600">21 Agustus 2024</p>
+                <p className="text-gray-600">17 Agustus 2024</p>
             </div>
             <div className="bg-[#F4FFE7] text-black flex flex-col items-center rounded shadow p-4">
                 <Image
