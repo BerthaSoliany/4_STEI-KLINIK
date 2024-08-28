@@ -6,7 +6,7 @@ Read Me of "Website STEI-Kinik"
     Namun, karena keterbatasan waktu, beberapa fitur belum dapat bekerja dengan sempurna seperti fitur : Login, Register, dan Feedback.
 
 - Teknologi, bahasa, dan framework yang digunakan :
-    Framework yang digunakan adalah NextJS. Bahasa yang digunakan adalah Typescript Execute dengan JavaScript dan Tailwind CSS.
+    Framework yang digunakan adalah NextJS. Bahasa yang digunakan adalah Typescript Execute dengan JavaScript dan Tailwind CSS. Deployment dilakukan melalui Vercell App. Layanan Database oleh Google Sheets. 
 
 - Struktur Program :
     - Struktur Utama :
