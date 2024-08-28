@@ -2,7 +2,6 @@ import Link from "next/link";
 import Header from "../Header/logo";
 import Pita from "../Header/pita";
 
-// buat header yg pita ijo
 
 export default function gantipassword() {
     return <body>
