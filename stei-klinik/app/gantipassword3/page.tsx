@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Header from "../Header/logo";
+import Pita from "../Header/pita";
 
 
 export default function gantipassword2() {
     return <body>
         <div className="overscroll-auto bg-[#F9F9F9] h-screen w-screen">
             <Header/>
-            <div className="w-[771px] h-[345px] rounded-[5px] bg-[#ffffff] absolute bottom-0" style={{marginLeft:"260px", marginBottom:"70px"}}>
+            <Pita judul="Ganti Password"/>
+            <div className="w-[771px] h-[345px] rounded-[5px] bg-[#ffffff] absolute bottom-0" style={{marginLeft:"260px", marginBottom:"30px"}}>
                 <Link href="/home">
                     <img
                         src="/close.png"
