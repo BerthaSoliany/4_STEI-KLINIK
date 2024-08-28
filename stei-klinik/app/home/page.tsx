@@ -6,6 +6,7 @@ import Spotlight from '@/public/Spotlight.png'
 import Artikel from '@/public/Artikel.png'
 import Header from '@/app/Header/logo'
 import Link from "next/link"
+import Footer from '@/app/Footer/footerhome'
 
 export default function Home() {
   return (
@@ -71,7 +72,7 @@ export default function Home() {
                 <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3">Artikel</h1>
                 <hr className="w-80 h-1 bg-[#006769] border-0 rounded mt-8" />
                 </div>
-                <div className="w-full bg-[#d8f691] p-4 rounded mt-8 text-center flex flex-col items-center">
+                <div className="w-full bg-[#F4FFE7] p-4 rounded mt-8 text-center flex flex-col items-center">
                 <Image className="flex items-center"
                     src ={Spotlight}
                     alt = "Spotlight"
@@ -84,7 +85,7 @@ export default function Home() {
                 </div>
                 
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                <div className="bg-[#d8f691] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -92,7 +93,7 @@ export default function Home() {
                     <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/sakit-tenggorokan">Sakit Tenggorokan: Penyebab, Gejala, dan Pengobatan Efektif</Link></h3>
                     <p className="text-gray-600">20 Agustus 2024</p>
                 </div>
-                <div className="bg-[#d8f691] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -101,7 +102,7 @@ export default function Home() {
                     </h3>
                     <p className="text-gray-600">21 Agustus 2024</p>
                 </div>
-                <div className="bg-[#d8f691] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -109,7 +110,7 @@ export default function Home() {
                     <h3 className="text-black font-bold hover:text-blue-400"><Link href="/articles/penyebab-nyeri">Penyebab Umum Nyeri pada Tangan dan Cara Pencegahannya</Link></h3>
                     <p className="text-gray-600">22 Agustus 2024</p>
                 </div>
-                <div className="bg-[#d8f691] p-4 rounded shadow">
+                <div className="bg-[#F4FFE7] p-4 rounded shadow">
                     <Image
                         src ={Artikel}
                         alt = "Artikel"
@@ -118,9 +119,15 @@ export default function Home() {
                     <p className="text-gray-600">23 Agustus 2024</p>
                 </div>
                 </div>
+                <br/>
+                <button className=" rounded-full border-2 border-[#006769] px-4 py-2 text-[#006769] font-bold hover:border-blue-400 hover:text-blue-400">
+                <Link href = "/pilih-artikel">Lihat Berita Lainnya</Link>
+                </button>   
                 
             </div>
+            
         </div>
+        <Footer></Footer>    
     </div>
     </div>
   );
