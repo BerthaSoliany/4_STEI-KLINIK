@@ -25,17 +25,13 @@ export default function Home() {
 
                 
                 <div className="flex space-x-4 pr-10">
-                <a href="/login">
-                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-green-600">  
-                        Login
-                    </button>
-                </a>
-                <a href="/register">
-                    <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-green-600">
-                        Sign Up
-                    </button>
-                </a>
-            </div>
+                <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Login
+                </button>
+                <button className="bg-[#006769] text-white px-4 py-2 rounded hover:bg-red-600">
+                    Sign Up
+                </button>
+                </div>
             </div>
         
             
@@ -66,7 +62,7 @@ export default function Home() {
                 <div>
                 <h1 className="text-[#006769] text-4xl font-bold pt-10 pl-10 pb-3">Feature</h1>
                 <div className="flex flex-wrap">
-                    <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendamping Sebaya ITB"/>
+                    <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendaming Sebaya ITB"/>
                     <Featlink featlink="https://six.itb.ac.id/" featcolor="solid" featname="Integrasi Direktorat"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Info Kesehatan"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Chat Dengan Dokter"/>
