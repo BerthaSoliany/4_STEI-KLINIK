@@ -38,15 +38,6 @@ export default function RegisterPage() {
                     Have an account? <a href="/login" className="text-blue-600 font-medium">login</a>
                 </p>
 
-                <button className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
-                    <img
-                        src="/google-logo.png"
-                        alt="Google Logo"
-                        className="w-5 h-5 mr-3"
-                    />
-                    Continue with Google
-                </button>
-
                 <div className="flex items-center mb-4">
                     <div className="flex-grow h-px bg-gray-300"></div>
                     <span className="text-gray-600 px-2 font-medium">or</span>

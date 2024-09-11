@@ -2,6 +2,8 @@
 
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import GoogleButton from 'react-google-button';
+import { signIn } from 'next-auth/react';
 
 export default function RegisterPage() {
     const [email, setEmail] = useState('');
@@ -9,7 +11,11 @@ export default function RegisterPage() {
 
     const router = useRouter();
 
-    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    const handleGoogleLogin = async () => {
+        await signIn('google', { callbackUrl: '/home' });
+    };
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
         const response = await fetch('/api/login', {
@@ -21,7 +27,7 @@ export default function RegisterPage() {
         });
 
         if (response.ok) {
-            router.push('/home'); // Redirect to /home on successful login
+            router.push('/home'); 
         } else {
             alert('Failed to login.');
         }
@@ -32,17 +38,15 @@ export default function RegisterPage() {
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
                 <h1 className="text-center text-gray-800 text-3xl font-semibold mb-4">Welcome to STEI-Klinik</h1>
                 <p className="text-center text-gray-600 mb-8">
-                    Do not have an account? <a href="/register" className="text-blue-600 font-medium">register</a>
+                    Do not have an account? <a href="/register" className="text-blue-600 font-medium">Register</a>
                 </p>
 
-                <button className="flex items-center justify-center w-full py-3 mb-4 border border-gray-300 rounded-lg text-gray-800 font-medium">
-                    <img
-                        src="/google-logo.png"
-                        alt="Google Logo"
-                        className="w-5 h-5 mr-3"
+                <div className="mb-8 flex justify-center">
+                    <GoogleButton
+                        onClick={handleGoogleLogin} 
+                        style={{ backgroundColor: '#11726c', color: '#fff' }}
                     />
-                    Continue with Google
-                </button>
+                </div>
 
                 <div className="flex items-center mb-4">
                     <div className="flex-grow h-px bg-gray-300"></div>
@@ -51,7 +55,6 @@ export default function RegisterPage() {
                 </div>
 
                 <form onSubmit={handleSubmit}>
-
                     <div className="mb-4">
                         <input
                             type="email"

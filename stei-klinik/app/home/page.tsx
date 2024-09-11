@@ -56,7 +56,7 @@ export default function Home() {
                     <hr className="flex-1 h-1 bg-[#006769] border-0 rounded mt-8" />
                 </div>
                 <div className="flex flex-wrap justify items-center">
-                    <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendaming Sebaya ITB"/>
+                    <Featlink featlink="https://student.itb.ac.id/bk/peer" featcolor="solid" featname="Pendamping Sebaya ITB"/>
                     <Featlink featlink="https://six.itb.ac.id/" featcolor="solid" featname="Integrasi Direktorat"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Info Kesehatan"/>
                     <Featlink featlink="/chat-dokter" featcolor="" featname="Chat Dengan Dokter"/>
