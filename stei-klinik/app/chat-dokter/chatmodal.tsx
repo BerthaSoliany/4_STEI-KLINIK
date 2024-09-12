@@ -15,7 +15,7 @@ export default function Chatmodal({chatmodal, open, onClose} : ChatmodalProps) {
         <>
             <div className='fixed inset-0 w-screen h-screen opacity-20 bg-black z-10'>'     
             </div>
-            <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FFFFFF] w-[700px] h-[360px] rounded-[10px] z-20'>
+            <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FFFFFF]  rounded-[10px] z-20 w-5/6 h-2/4 flex flex-col items-center'>
                 <div className='fixed top-4 right-6'>
                     <button onClick={onClose}>
                         <Image
@@ -27,19 +27,17 @@ export default function Chatmodal({chatmodal, open, onClose} : ChatmodalProps) {
                         />
                     </button>
                 </div>
-                <div className='mt-12 ml-6 w-[650px] h-[250px] bg-[#f3faf3] border-[#40A578] border-[1px]'>
+                <div className='mt-12 ml-6  bg-[#f3faf3] border-[#40A578] border-[1px] h-2/3 w-5/6 flex items-center flex-col justify-center items-center'>
                     <Image
-                        className='fixed m-5 ml-10'
+                        className='mt-2'
                         src="/whatsapp.png"
-                        width={207}
-                        height={207}
+                        width={100}
+                        height={100}
                         alt="whatsapp logo"
                     />
-                    <pre className='flex text-2xl font-bold text-black justify-center pt-[100px]'>Chat akan dialihkan ke WhatsApp</pre>
+                    <pre className='flex font-bold p-2 text-black justify-center'>Chat akan dialihkan ke WhatsApp</pre>
                 </div>
-                <div className='fixed border-[#40A578] border-[1px] right-[26px] bottom-4 pt-1 pb-1 pl-8 pr-8'>
-                    <Link href={chatmodal} rel="noopener noreferrer" target="_blank" className='text-[#016869] font-bold'>YES</Link>     
-                </div>
+                <Link href={chatmodal} rel="noopener noreferrer" target="_blank" className='text-[#016869] font-bold border-[#40A578] border-[1px] p-2 m-2'>YES</Link>     
             </div>       
         </>
     )
