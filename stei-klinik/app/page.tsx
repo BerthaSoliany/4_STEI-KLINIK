@@ -10,7 +10,7 @@ import Footer from '@/app/Footer/footerhome'
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col bg-white font-serif">
         <div className="z-10">
             <div className="w-full flex flex-col">
             
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
         
             
-            <div className=" flex items-center bg-[#006769] h-[71px] ">
+            <div className=" flex items-center bg-[#006769] h-16">
                 <div className="ml-auto p-4">
                 <input 
                     type="text" 

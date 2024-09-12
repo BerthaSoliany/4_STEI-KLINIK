@@ -12,7 +12,7 @@ const Boxdokter = ({nama, dokter, nomor, chatlink}: DokProps) => {
     return (
         <>
             <div className="flex">
-                <div className="h-[149px] w-[298px] rounded-[5px] border-[#11726c] border-[1px] p-4 mb-10">
+                <div className="h-[149px] w-[298px] rounded-[5px] border-[#11726c] border-[1px] p-4 mb-10 shadow-md">
                     <div className="flex flex-row space-x-4 p-2 pl-0">
                         <div className="overflow-hidden rounded-[5px] h-[99px] w-[83px]">
                             <div className="h-[99px] w-[99px] ">
